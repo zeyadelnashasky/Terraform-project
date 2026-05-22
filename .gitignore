@@ -9,8 +9,6 @@
 # ==========================================
 # Variables and Secrets (CRITICAL)
 # ==========================================
-*.tfvars
-*.tfvars.json
 *.pem
 *.key
 
