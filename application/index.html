@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Deployed Successfully</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .icon {
+            font-size: 50px;
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            color: #7f8c8d;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 25px;
+        }
+        .badge {
+            background-color: #34495e;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .badge.aws { background-color: #ff9900; }
+        .badge.docker { background-color: #0091e6; }
+        .badge.nginx { background-color: #009639; }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">✔</div>
+        <h1>Nginx Web Server</h1>
+        <p>Your application has been successfully deployed using Terraform & AWS Auto Scaling Group.</p>
+        
+        <div class="badge-container">
+            <span class="badge aws">AWS EC2</span>
+            <span class="badge docker">Docker</span>
+            <span class="badge nginx">Nginx</span>
+        </div>
+
+        <div class="footer">
+            Managed via Infrastructure as Code
+        </div>
+    </div>
+
+</body>
+</html>

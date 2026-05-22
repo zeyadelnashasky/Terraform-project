@@ -1,0 +1,33 @@
+# ==========================================
+# Terraform Core Files
+# ==========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# ==========================================
+# Variables and Secrets (CRITICAL)
+# ==========================================
+*.tfvars
+*.tfvars.json
+*.pem
+*.key
+
+# ==========================================
+# Override and CLI Configuration
+# ==========================================
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ==========================================
+# Logs and OS Files
+# ==========================================
+crash.log
+crash.*.log
+*.log
+.DS_Store
